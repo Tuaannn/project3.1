@@ -41,6 +41,7 @@ select {
     .container {
         width: 739px;
         max-width: calc(100% - 20px);
+        overflow: hidden;
     }
 }
 
