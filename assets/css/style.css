@@ -1496,6 +1496,7 @@ a {
         gap: 30px;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-flow: row;
+        justify-items: center;
     }
 
     .custumer-item {
