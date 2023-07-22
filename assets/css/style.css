@@ -1790,6 +1790,7 @@ a {
 @media only screen and (max-width: 739px) {
     .footer {
         margin-top: 0;
+        padding-bottom: 52px;
     }
     .footer-item {
         display: none;
@@ -1802,6 +1803,9 @@ a {
     .footer-item__input::placeholder {
         color: #6a8383
         font-size: 2rem;
+    }
+    .footer-separate {
+        display: none;
     }
     
 }
