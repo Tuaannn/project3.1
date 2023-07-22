@@ -631,6 +631,10 @@ a {
 }
 
 @media only screen and (max-width: 739px) {
+    /* .service {
+        background-color: gray;
+    } */
+
     .service__top {
         flex-direction: column;
     }
@@ -642,6 +646,7 @@ a {
     .service__heading {
         font-size: 3rem;
         max-width: 281px;
+        line-height: 1.33;
     }
 
     .service__heading::after {
@@ -664,7 +669,6 @@ a {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        width: 100%;
         flex-shrink: 0;
     }
 
@@ -672,6 +676,10 @@ a {
         display: block;
         width: 260.629px;
         height: 224px;
+    }
+
+    .service__top {
+        margin-bottom: 40px;
     }
 
     .service__info {
@@ -936,6 +944,105 @@ a {
 
 .about-stats__member:last-child {
     margin-right: 0;
+}
+
+@media only screen and (max-width: 739px) {
+    .about {
+        margin-top: 0;
+        margin-top: 50px;
+    }
+
+    .about-wrap {
+        flex-direction: column;
+        gap: 155px;
+    }
+
+    .about__media {
+        max-width: 375px;
+    }
+
+    .about__img {
+        width: 152.332px;
+        height: 257.462px;
+    }
+
+    .about__img:first-child {
+        transform: translateY(40px);
+    }
+
+    .about__img:last-child {
+        margin-top: 0px;
+    }
+
+    .about__media {
+        justify-content: center;
+    }
+
+    .about-stats {
+        right: 30px;
+        bottom: -100px;
+    }
+
+    .about-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about__desc {
+        margin-bottom: 12px;
+    }
+
+    .about__heading {
+        max-width: 263px;
+        font-size: 3rem;
+        line-height: 1.33;
+    }
+
+    .about__info {
+        max-width: 310px;
+        font-size: 1.4rem;
+        line-height: 1.85;
+    }
+
+    .about-row {
+        row-gap: 27px;
+    }
+
+    .about-row__percent {
+        font-size: 2.6rem;
+    }
+
+    .about-row-desc {
+        font-size: 1.4rem;
+    }
+
+    .about-row__info {
+        max-width: 335px;
+    }
+
+    .about__separate-top::after {
+        bottom: -11px;
+        max-width: 335px;
+    }
+
+    .about__separate-bottom::after {
+        bottom: -16px;
+        max-width: 335px;
+    }
+
+    .about__flower {
+        width: 38.124px;
+        height: 38.106px;
+        top: 0px;
+        left: -18px;
+    }
+
+    .about__string {
+        width: 286.693px;
+        height: 190.871px;
+        top: 17px;
+        left: -40px;
+    }
 }
 
 /* process */
