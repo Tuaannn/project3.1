@@ -659,19 +659,22 @@ a {
     }
 
     .service-list {
-        display: flex;
-        overflow: hidden;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 20px;
     }
 
     .service-item {
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        width: 100%;
-        flex-shrink: 0;
+        margin: auto;
+        max-width: 260px;
     }
 
+    .service-item:hover {
+        transform: none;
+    }
+    
     .service-item__img {
         display: block;
         width: 260.629px;
@@ -1091,8 +1094,8 @@ a {
 }
 
 .process-item__number {
+    min-width: 109px;
     align-self: center;
-    margin: 0 47px 0 20px;
     color: var(--primary-color);
     font-size: 7.2rem;
     font-weight: 600;
@@ -1100,6 +1103,12 @@ a {
 
 .process-item__more {
     margin-right: 175px;
+}
+
+.process-item__wrap {
+    margin-left: 20px;
+    display: flex;
+    gap: 47px;
 }
 
 .process-item__title {
@@ -1114,7 +1123,7 @@ a {
 .process-item__link {
     color: #575d5e;
     font-size: 1.8rem;
-    display: none;
+    /* display: none; */
 }
 
 .process-item__link:hover {
@@ -1152,6 +1161,79 @@ a {
         #83a17d 4.17%,
         rgba(131, 161, 125, 0) 36.46%
     );
+}
+
+@media only screen and (max-width: 739px) {
+    .process {
+        margin-top: 34px;
+    }
+
+    .pocess-content {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .process__desc::before {
+        position: absolute;
+        top: 6px;
+    }
+
+    .process__heading {
+        max-width: 298px;
+        margin-top: 16px;
+        font-size: 3rem;
+        line-height: 1.33;
+    }
+
+    .process__heading::after {
+        position: absolute;
+        left: 145px;
+    }
+
+    .process__image {
+        display: none;
+    }
+
+    .process-list {
+        margin-top: 59px;
+    }
+
+    .process-item__number {
+        font-size: 5rem;
+    }
+
+    /* .process-item__more {
+        margin-right: 43px;
+    } */
+
+    .process-item__title {
+        font-size: 2rem;
+    }
+
+    .process-item__desc {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+
+    .process-item {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 43px;
+    }
+
+    .process-item__title {
+        margin: 0;
+    }
+
+    .process-item__wrap {
+        align-items: center;
+        gap: 43px;
+        margin: 0;
+    }
+
+    .process__separate {
+        width: 335px;
+    }
 }
 
 /* project   */
@@ -1227,15 +1309,15 @@ a {
 }
 
 .project-meida_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 118px;
     height: 118px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1252,6 +1334,65 @@ a {
     position: absolute;
     top: 0;
     right: -70px;
+}
+
+@media only screen and (max-width: 739px) {
+    .project-content {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .project-wap {
+    }
+
+    .project-content__heading {
+        max-width: 268px;
+        font-size: 3rem;
+        line-height: 1.33;
+    }
+
+    .project-row {
+        margin-top: 8px;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .project-action {
+        margin-top: 18px;
+    }
+
+    .project-meida {
+        margin-top: 136px;
+    }
+
+    .project-media__img {
+        width: 100%;
+        height: 544px;
+    }
+
+    .project-meida_button {
+        width: 98px;
+        height: 98px;
+    }
+
+    .project-meida__play {
+        width: 30px;
+        height: 30px;
+    }
+
+    .project-flower {
+        width: 72.033px;
+        height: 72px;
+        top: 257px;
+        right: 81px;
+    }
+
+    .project-string {
+        width: 380.208px;
+        height: 253.13px;
+        top: 297px;
+        right: -96px;
+    }
 }
 
 /* custumer */
@@ -1322,6 +1463,38 @@ a {
     text-align: center;
     font-size: 1.4rem;
     line-height: 1.71;
+}
+
+@media only screen and (max-width: 739px) {
+    .custumer {
+        margin-top: 50px;
+    }
+
+    .custumer__heading {
+        max-width: 275px;
+        font-size: 3rem;
+        line-height: 1.33;
+    }
+
+    .custumer__desc {
+        margin-top: 12px;
+        max-width: 306px;
+        font-size: 1.4rem;
+        line-height: 1.71;
+    }
+
+    .custumer-list {
+        margin-top: 30px;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row;
+    }
+
+    .custumer-item:hover {
+        box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+        transform: none;
+        border-color: transparent;
+    }
 }
 
 /* blog*/
@@ -1451,6 +1624,48 @@ a {
     bottom: 39px;
 }
 
+@media only screen and (max-width: 739px) {
+    .blog {
+        margin-top: 50px;
+    }
+
+    .blog-heading__desc {
+        margin-bottom: 20px;
+    }
+
+    .blog-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-wrap__title {
+        max-width: 278px;
+        font-size: 3rem;
+        line-height: 1.33;
+    }
+
+    .blog-wrap__title::after {
+        left: 168px;
+        top: 143px;
+    }
+
+    .blog-wrap__desc {
+        max-width: 272px;
+        margin-top: 12px;
+        font-size: 1.4rem;
+        line-height: 1.85;
+    }
+
+    .blog-list {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+
+    .blog-item {
+        width: 100%;
+    }
+}
+
 /* footer    */
 .footer {
     margin-top: 102px;
@@ -1490,7 +1705,7 @@ a {
 
 .footer-item__input::placeholder {
     color: #6a8383;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 
@@ -1570,4 +1785,23 @@ a {
         #295a5a 53.48%,
         rgba(38, 82, 82, 0) 100%
     );
+}
+
+@media only screen and (max-width: 739px) {
+    .footer {
+        margin-top: 0;
+    }
+    .footer-item {
+        display: none;
+    }
+
+    .footer__heading {
+        font-size: 2.4rem;
+    }
+
+    .footer-item__input::placeholder {
+        color: #6a8383
+        font-size: 2rem;
+    }
+    
 }
