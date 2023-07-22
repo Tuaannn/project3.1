@@ -41,7 +41,6 @@ select {
     .container {
         width: 739px;
         max-width: calc(100% - 20px);
-        overflow: hidden;
     }
 }
 
@@ -1349,6 +1348,10 @@ a {
     .project-content {
         flex-direction: column;
         align-items: start;
+    }
+
+    .project__container {
+        overflow: hidden;
     }
 
     .project-content__heading {
