@@ -40,7 +40,7 @@ select {
 @media only screen and (max-width: 739px) {
     .container {
         width: 739px;
-        max-width: calc(100% - 20px);
+        max-width: calc(100% - 48px);
     }
 }
 
@@ -304,11 +304,6 @@ a {
         margin-top: 25.7px;
         padding-bottom: 0;
         padding-top: 0;
-    }
-
-    .container {
-        width: 739px;
-        max-width: calc(100% - 24px);
     }
 
     .navbar {
